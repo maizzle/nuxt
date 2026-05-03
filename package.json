@@ -1,6 +1,6 @@
 {
   "name": "@maizzle/nuxt",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Nuxt module for the Maizzle email framework",
   "license": "MIT",
   "repository": "https://github.com/maizzle/nuxt",
