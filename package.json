@@ -1,0 +1,41 @@
+{
+  "name": "@maizzle/nuxt",
+  "version": "0.1.0",
+  "description": "Nuxt module for the Maizzle email framework",
+  "license": "MIT",
+  "repository": "https://github.com/maizzle/nuxt",
+  "type": "module",
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.13.0"
+  },
+  "peerDependencies": {
+    "@maizzle/framework": "next"
+  },
+  "devDependencies": {
+    "@maizzle/framework": "next",
+    "@nuxt/module-builder": "^0.8.4",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-module",
+    "maizzle",
+    "email"
+  ]
+}
