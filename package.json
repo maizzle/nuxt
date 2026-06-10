@@ -11,13 +11,18 @@
     "access": "public"
   },
   "type": "module",
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
   "exports": {
     ".": {
       "types": "./dist/types.d.mts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
+      "import": "./dist/module.mjs"
     }
   },
   "files": [
@@ -28,15 +33,15 @@
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.13.0"
+    "@nuxt/kit": "^4.4.8"
   },
   "peerDependencies": {
     "@maizzle/framework": "latest"
   },
   "devDependencies": {
     "@maizzle/framework": "latest",
-    "@nuxt/module-builder": "^0.8.4",
-    "typescript": "^5.6.0"
+    "@nuxt/module-builder": "^1.0.2",
+    "typescript": "^5.8.3"
   },
   "keywords": [
     "nuxt",
