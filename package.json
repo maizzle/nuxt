@@ -30,7 +30,8 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare"
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare",
+    "release": "npx np --no-tests"
   },
   "dependencies": {
     "@nuxt/kit": "^4.4.8"
