@@ -31,10 +31,10 @@
     "@nuxt/kit": "^3.13.0"
   },
   "peerDependencies": {
-    "@maizzle/framework": "next"
+    "@maizzle/framework": "latest"
   },
   "devDependencies": {
-    "@maizzle/framework": "next",
+    "@maizzle/framework": "latest",
     "@nuxt/module-builder": "^0.8.4",
     "typescript": "^5.6.0"
   },
@@ -42,6 +42,15 @@
     "nuxt",
     "nuxt-module",
     "maizzle",
-    "email"
+    "email",
+    "tailwindcss",
+    "responsive-email",
+    "email-framework",
+    "email-template",
+    "email-marketing",
+    "email-campaigns",
+    "email-newsletter",
+    "email-boilerplate",
+    "html-emails"
   ]
 }
